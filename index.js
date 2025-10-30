@@ -39,10 +39,19 @@ function generatePassword(includeSymbols) {
     }
     return password;
 }
+
 function generatePass() {
-    const includeSymbols = document.getElementById("useSymbols").checked;
-    const password = generatePassword(includeSymbols);
-    document.getElementById("password").value = password;
+  const includeSymbols = document.getElementById("useSymbols").checked;
+  const password = generatePassword(includeSymbols);
+  const passwordField = document.getElementById("password");
+  const generateBtn = document.getElementById("generateBtn");
+    
+  generateBtn.classList.add("push-anim");
+  setTimeout(() => generateBtn.classList.remove("push-anim"), 250);
+
+  passwordField.value = password;
+  passwordField.classList.add("show");
+  setTimeout(() => passwordField.classList.remove("show"), 400);
 }
 
 function copyBtn() {
