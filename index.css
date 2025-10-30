@@ -1,0 +1,154 @@
+body {
+    margin-top: 80px;
+    background: rgb(13, 4, 45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: Karla;
+font-size: 40px;
+font-weight: 800;
+line-height: 40px;
+letter-spacing: -1.5%;
+text-align: center;
+color: white;
+margin-bottom: 0;
+}
+
+h2 {
+margin-top: 0px;
+font-family: Karla;
+font-size: 40px;
+font-weight: 800;
+letter-spacing: -2.5%;
+text-align: center;
+color: #7768AE;
+}
+
+p {
+font-family: Karla;
+font-size: 18px;
+font-weight: 400;
+text-align: center;
+color: white;
+margin: 20px 0 10px 0;
+}
+
+#strength-select {
+min-width: 240px;
+height: 20px;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+}
+
+#strength-select button{
+width: 80px;
+height: 20px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 38px 0px 38px;
+border: none;
+border-radius: 10px;
+margin: 0 1px;
+cursor: pointer;
+color: white;
+text-shadow: 0 0 2px black;
+transition: all 0.3s ease-in-out;
+}
+
+#strength-select button.active {
+    border: 2px solid white;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);
+}
+
+#weakBtn {
+background: rgba(59, 178, 115, 1);
+}
+#weakBtn:hover{
+    box-shadow: 0 0 10px green;
+    transform: scale(1.05);
+}
+
+
+#mediumBtn {
+background: rgba(225, 188, 41, 1);
+}
+#mediumBtn:hover{
+    box-shadow: 0 0 10px yellow;
+    transform: scale(1.05);
+}
+
+
+#strongBtn {
+background: rgba(225, 85, 84, 1);
+}
+#strongBtn:hover{
+    box-shadow: 0 0 10px red;
+    transform: scale(1.05);
+}
+
+
+#useSymbols {
+    margin-top: 15px;
+    cursor: pointer;
+}
+label {
+    font-family: Karla;
+    color: white;
+    font-size: 16px;
+}
+
+#generateBtn {
+    /* Oval 1 */
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background: rgba(217, 56, 56, 1);
+color: white;
+font-family: Karla;
+font-size: 20px;
+transition: all 0.3s ease-in-out;
+}
+#generateBtn:hover {
+    box-shadow: 0 0 10px red;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#pass-container {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 300px;
+}
+
+#password {
+    width: 280px;
+    height: 30px;
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#copyBtn {
+    padding-top: 0px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#pass-container input{
+    background-color: white;
+    opacity: 0.8;
+}

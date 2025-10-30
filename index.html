@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwordinator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Random</h1>
+    <h2>PASSWORDINATOR</h2>
+    <p>Select password strength:</p>
+    <div id="strength-select">
+        <button id="weakBtn" onclick="setActiveStrength('weak')">Weak</button>
+        <button id="mediumBtn" onclick="setActiveStrength('medium')">Medium</button>
+        <button id="strongBtn" onclick="setActiveStrength('strong')">Strong</button>
+    </div>
+
+    <label><input type="checkbox" id="useSymbols">Use Symbols</label>
+    <br></br>
+
+        <button id="generateBtn" onclick="generatePass()">PUSH</button>
+    <br></br>
+
+    <div id="pass-container">
+        <input type="text" id="password" readonly placeholder="A password to destroy the tri-state area">
+        <img src="wcopy.png" id="copyBtn" onclick="copyBtn()">
+    </div>
+</body>
+</html>
